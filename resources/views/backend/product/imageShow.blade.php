@@ -36,7 +36,9 @@
                         </td>
                          <td>
                       <a href="{{ route('dashboard.product.image.edit', $image->id ) }}" class="btn btn-primary btn-sm">Edit</a>
-                             <a href="#" class="btn btn-danger btn-sm">Delete</a>
+                             <a href="" class="btn btn-danger btn-sm">Delete</a>
+
+                            
                          </td>
                        </tr>
                    @endforeach

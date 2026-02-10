@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -6,11 +6,11 @@
 
         <title>{{ config('app.name', 'Laravel') }}</title>
 
-        <!-- Fonts -->
+       
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
-        <!-- Styles / Scripts -->
+       
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @else
@@ -119,7 +119,7 @@
                     </ul>
                 </div>
                 <div class="bg-[#fff2f2] dark:bg-[#1D0002] relative lg:-ml-px -mb-px lg:mb-0 rounded-t-lg lg:rounded-t-none lg:rounded-r-lg aspect-[335/376] lg:aspect-auto w-full lg:w-[438px] shrink-0 overflow-hidden">
-                    {{-- Laravel Logo --}}
+                
                     <svg class="w-full text-[#F53003] dark:text-[#F61500] transition-all translate-y-0 opacity-100 max-w-none duration-750 starting:opacity-0 starting:translate-y-6" viewBox="0 0 438 104" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17.2036 -3H0V102.197H49.5189V86.7187H17.2036V-3Z" fill="currentColor" />
                         <path d="M110.256 41.6337C108.061 38.1275 104.945 35.3731 100.905 33.3681C96.8667 31.3647 92.8016 30.3618 88.7131 30.3618C83.4247 30.3618 78.5885 31.3389 74.201 33.2923C69.8111 35.2456 66.0474 37.928 62.9059 41.3333C59.7643 44.7401 57.3198 48.6726 55.5754 53.1293C53.8287 57.589 52.9572 62.274 52.9572 67.1813C52.9572 72.1925 53.8287 76.8995 55.5754 81.3069C57.3191 85.7173 59.7636 89.6241 62.9059 93.0293C66.0474 96.4361 69.8119 99.1155 74.201 101.069C78.5885 103.022 83.4247 103.999 88.7131 103.999C92.8016 103.999 96.8667 102.997 100.905 100.994C104.945 98.9911 108.061 96.2359 110.256 92.7282V102.195H126.563V32.1642H110.256V41.6337ZM108.76 75.7472C107.762 78.4531 106.366 80.8078 104.572 82.8112C102.776 84.8161 100.606 86.4183 98.0637 87.6206C95.5202 88.823 92.7004 89.4238 89.6103 89.4238C86.5178 89.4238 83.7252 88.823 81.2324 87.6206C78.7388 86.4183 76.5949 84.8161 74.7998 82.8112C73.004 80.8078 71.6319 78.4531 70.6856 75.7472C69.7356 73.0421 69.2644 70.1868 69.2644 67.1821C69.2644 64.1758 69.7356 61.3205 70.6856 58.6154C71.6319 55.9102 73.004 53.5571 74.7998 51.5522C76.5949 49.5495 78.738 47.9451 81.2324 46.7427C83.7252 45.5404 86.5178 44.9396 89.6103 44.9396C92.7012 44.9396 95.5202 45.5404 98.0637 46.7427C100.606 47.9451 102.776 49.5487 104.572 51.5522C106.367 53.5571 107.762 55.9102 108.76 58.6154C109.756 61.3205 110.256 64.1758 110.256 67.1821C110.256 70.1868 109.756 73.0421 108.76 75.7472Z" fill="currentColor" />
@@ -130,7 +130,7 @@
                         <path d="M376.571 30.3656C356.603 30.3656 340.797 46.8497 340.797 67.1828C340.797 89.6597 356.094 104 378.661 104C391.29 104 399.354 99.1488 409.206 88.5848L398.189 80.0226C398.183 80.031 389.874 90.9895 377.468 90.9895C363.048 90.9895 356.977 79.3111 356.977 73.269H411.075C413.917 50.1328 398.775 30.3656 376.571 30.3656ZM357.02 61.0967C357.145 59.7487 359.023 43.3761 376.442 43.3761C393.861 43.3761 395.978 59.7464 396.099 61.0967H357.02Z" fill="currentColor" />
                     </svg>
 
-                    {{-- Light Mode 12 SVG --}}
+                   
                     <svg class="w-[448px] max-w-none relative -mt-[4.9rem] -ml-8 lg:ml-0 lg:-mt-[6.6rem] dark:hidden" viewBox="0 0 440 376" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
                             <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" fill="black" />
@@ -199,7 +199,7 @@
                         </g>
                     </svg>
 
-                    {{-- Dark Mode 12 SVG --}}
+                
                     <svg class="w-[448px] max-w-none relative -mt-[4.9rem] -ml-8 lg:ml-0 lg:-mt-[6.6rem] hidden dark:block" viewBox="0 0 440 376" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g class="transition-all delay-300 translate-y-0 opacity-100 duration-750 starting:opacity-0 starting:translate-y-4">
                             <path d="M188.263 355.73L188.595 355.73C195.441 348.845 205.766 339.761 219.569 328.477C232.93 317.193 242.978 308.205 249.714 301.511C256.34 294.626 260.867 287.358 263.296 279.708C265.725 272.058 264.565 264.121 259.816 255.896C254.516 246.716 247.062 239.352 237.454 233.805C227.957 228.067 217.908 225.198 207.307 225.198C196.927 225.197 190.136 227.97 186.934 233.516C183.621 238.872 184.726 246.331 190.247 255.894L125.647 255.891C116.371 239.825 112.395 225.481 113.72 212.858C115.265 200.235 121.559 190.481 132.602 183.596C143.754 176.52 158.607 172.982 177.159 172.983C196.594 172.984 215.863 176.523 234.968 183.6C253.961 190.486 271.299 200.241 286.98 212.864C302.661 225.488 315.14 239.833 324.416 255.899C333.03 270.817 336.841 283.918 335.847 295.203C335.075 306.487 331.376 316.336 324.75 324.751C318.346 333.167 308.408 343.494 294.936 355.734L377.094 355.737L405.917 405.656L217.087 405.649L188.263 355.73Z" fill="black"/>
@@ -274,4 +274,1127 @@
             <div class="h-14.5 hidden lg:block"></div>
         @endif
     </body>
-</html>
+</html> --}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@extends('frontend.layout')
+
+@section('fronted_content')
+
+    <section id="banner">
+        <div class="container" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <div class="sliders">
+
+                <!-- 1 -->
+                <div class="slides">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-6 banner-img">
+                            <img src="{{ asset(path: 'fronted/assets/images/banner/img1.png') }}"  alt="banner image" class="img-fluid">
+                            <div class="offer">
+                                <p>70%</p>
+                                <p>Off</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 contains">
+                            <p>Welcome to Shopery</p>
+                            <h4>Fresh & Healthy Organic Food</h4>
+                            <p>Free shipping on all your order. we deliver, you enjoy</p>
+                            <a href="#">Shop Now &nbsp;&nbsp;&rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 2 -->
+
+                <div class="slides">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-6 banner-img">
+                            <img src="{{ asset(path: 'fronted/assets/images/banner/img2.png') }}"   alt="banner image" class="img-fluid">
+                            <div class="offer">
+                                <p>70%</p>
+                                <p>Off</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 contains">
+                            <p>Welcome to Shopery</p>
+                            <h4>Fresh & Healthy Organic Food</h4>
+                            <p>Free shipping on all your order. we deliver, you enjoy</p>
+                            <a href="#">Shop Now &nbsp;&nbsp;&rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 3 -->
+
+                <div class="slides">
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-xl-6 banner-img">
+                            <img src="{{ asset(path: 'fronted/assets/images/banner/img3.png') }}"  alt="banner image" class="img-fluid">
+                            <div class="offer">
+                                <p>70%</p>
+                                <p>Off</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 contains">
+                            <p>Welcome to Shopery</p>
+                            <h4>Fresh & Healthy Organic Food</h4>
+                            <p>Free shipping on all your order. we deliver, you enjoy</p>
+                            <a href="#">Shop Now &nbsp;&nbsp;&rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =====  banner section end    ===== -->
+
+    <section id="service">
+        <div class="container" data-aos="flip-left">
+            <div class="services row">
+                <!-- 1 -->
+                <div class="box col-xl-3 col-md-6 col-sm-6">
+                    <span><iconify-icon icon="carbon:delivery" width="32" height="32"></iconify-icon></span>
+                    <h5>Free Shipping</h5>
+                    <p>Free shipping with discount</p>
+                </div>
+
+                <!-- 2 -->
+                <div class="box col-xl-3 col-md-6 col-sm-6">
+                    <span><iconify-icon icon="ix:support" width="32" height="32"></iconify-icon></span>
+                    <h5>Great Support 24/7</h5>
+                    <p>Instant access to Contact</p>
+                </div>
+
+                <!-- 3 -->
+                <div class="box col-xl-3 col-md-6 col-sm-6">
+                    <span><iconify-icon icon="ion:bag-check-outline" width="32" height="32"></iconify-icon></span>
+                    <h5>100% Secure Payment</h5>
+                    <p>We ensure your money is save</p>
+                </div>
+
+                <!-- 4 -->
+                <div class="box col-xl-3 col-md-6 col-sm-6">
+                    <span><iconify-icon icon="solar:box-broken" width="32" height="32"></iconify-icon></span>
+                    <h5>Money-Back Guarantee</h5>
+                    <p>30 days money-back guarantee</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====  categories section start  ===== -->
+
+
+    <section id="categories">
+        <div class="container">
+
+            <h5>Introducing Our Products</h5>
+
+            <!-- buttons -->
+            <div class="buttons">
+                <button class="category-button active" data-filter="all">All</button>
+                <button class="category-button" data-filter="cat-1">Vegetable</button>
+                <button class="category-button" data-filter="cat-2">Fruit</button>
+                <button class="category-button" data-filter="cat-3">Meat & Fish</button>
+                <button class="category-button" data-filter="cat-4">View All</button>
+            </div>
+            <!-- buttons -->
+
+
+            <!-- divs -->
+            <div class="filter-box row ">
+                <!-- <div class="filter cat-1 row"> -->
+
+                    @forelse ($products as $product)
+                       
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2">
+                    <div class="img-box">
+                        <img  src="{{ asset('storage/product/' . $product->images[0]->image) }}" alt="product4" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>{{ $product->title }}</h4>
+                            <b>{{ $product->price }}</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span>
+                                <a href="{{ route('addto.cart', $product->id) }}"> 
+                                     <iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon>
+                                </a>
+                               
+
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- <div class="product_child col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/cauliflower.png') }}"  alt="cauliflower"
+                            class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Fresh Cauliflower</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child   col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Lettuce.png') }}"  alt="Lettuce" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Lettuce</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/capsicum.png') }}"  alt="capsicum" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Capsicum</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Chilli.png') }}"  alt="chilli" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Chilli</h4>
+                            <b>$14.99</b>
+
+                      <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Eggplant.png') }}"  alt="Eggplant" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Eggplant</h4>
+                            <b>$34.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <a href="./assets/html/product.html"><img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Cabbage.png') }}"  alt="Cabbage" class="img-fluid"></a>
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                           <a href="./assets/html/product.html" style="text-decoration: none;"> <h4>Chinese Cabbage</h4></a>
+                            <b>$12.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+
+     
+
+ 
+                    @empty
+                        
+                    @endforelse
+
+
+                {{-- <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/tomato.png') }}" src="./assets/images/categories/Vegetables/tomato.png" alt="product4" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Red Tomatoes</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/cauliflower.png') }}"  alt="cauliflower"
+                            class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Fresh Cauliflower</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child   col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Lettuce.png') }}"  alt="Lettuce" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Lettuce</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/capsicum.png') }}"  alt="capsicum" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Capsicum</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child  col-xl-3 col-lg-4  col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Chilli.png') }}"  alt="chilli" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Chilli</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24" --}}
+                                    {{-- height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Eggplant.png') }}"  alt="Eggplant" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Eggplant</h4>
+                            <b>$34.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-1">
+                    <div class="img-box">
+                        <a href="./assets/html/product.html"><img src="{{ asset(path: 'fronted/assets/images/categories/Vegetables/Cabbage.png') }}"  alt="Cabbage" class="img-fluid"></a>
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                           <a href="./assets/html/product.html" style="text-decoration: none;"> <h4>Chinese Cabbage</h4></a>
+                            <b>$12.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+
+
+
+                <!-- </div> -->
+                <!-- vegetable -->
+
+
+
+                <!-- category fruit -->
+                <!-- <div class="filter cat-2 row"> -->
+
+                <!-- product 1 -->
+                {{-- <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Fruit/product1.png') }}" alt="product1" class="img-fluid">
+                        <p>Sale <span>50%</span></p>
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Apple</h4>
+                            <b>$14.99</b>
+                            <del>$20.99</del>
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Fruit/malta.png') }}"  alt="malta" class="img-fluid">
+
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Fresh Indian Malta</h4>
+                            <b>$20.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-2">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/Fruit/mango.png') }}"   alt="mango" class="img-fluid">
+
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Surjapur Mango</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+
+
+
+
+                
+                <!-- meat and fish -->
+
+                <!-- chicken -->
+                {{-- <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-3">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/meat&fish/chicken.jpg') }}"   alt="chicken"
+                            class="img-fluid beef">
+
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Chicken</h4>
+                            <b>$25.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+                <!-- beef -->
+                {{-- <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-3">
+                    <div class="img-box">
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/meat&fish/meat.jpg') }}"  alt="meat" class="img-fluid beef">
+
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Beef</h4>
+                            <b>$29.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+                <!-- fish -->
+                {{-- <div class="product_child col-xl-3 col-lg-4 col-sm-4  filter cat-3">
+                    <div class="img-box">
+                            
+                        <img src="{{ asset(path: 'fronted/assets/images/categories/meat&fish/fish2.webp') }}"   alt="fish" class="img-fluid beef">
+
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Rui Fish</h4>
+                            <b>$29.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div> --}}
+
+
+
+
+                <!-- meat and fish -->
+
+
+
+
+            </div>
+
+
+            <!-- divs -->
+
+        </div>
+    </section>
+
+    <!-- =====  categories section end    ===== -->
+
+       
+    <section id="news">
+        <div class="container" >
+            <h4>Latest News</h4>
+            <div class="row">
+                <!-- 1 -->
+                <div class="card-box col-xl-4 col-lg-4 col-md-4">
+                    <div class="img-box" style="padding-bottom: 24px;">
+                        <img src="{{ asset(path: 'fronted/assets/images/news/image1.png') }}"  alt="image" class="img-fluid c-image">
+                        <div class="date">
+                            <h4>23</h4>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div class="contains">
+                        <h4>Curabitur porttitor orci eget neque accumsan venenatis.</h4>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="#">Read More &nbsp;<span><iconify-icon icon="si:arrow-right-line" width="24"
+                                    height="24"></iconify-icon></span> </a>
+                    </div>
+                </div>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <div class="card-box col-xl-4 col-lg-4 col-md-4">
+                    <div class="img-box" style="padding-bottom: 24px;">
+                        <img src="{{ asset(path: 'fronted/assets/images/news/image2.png') }}"  alt="image" class="img-fluid c-image">
+                        <div class="date">
+                            <h4>23</h4>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div class="contains">
+                        <h4>Curabitur porttitor orci eget neque accumsan venenatis.</h4>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="#">Read More &nbsp;<span><iconify-icon icon="si:arrow-right-line" width="24"
+                                    height="24"></iconify-icon></span> </a>
+                    </div>
+                </div>
+                <!-- 2 -->
+
+                <!-- 3 -->
+                <div class="card-box col-xl-4 col-lg-4 col-md-4">
+                    <div class="img-box" style="padding-bottom: 24px;">
+                        <img src="{{ asset(path: 'fronted/assets/images/news/image3.png') }}"  alt="image" class="img-fluid c-image">
+                        <div class="date">
+                            <h4>23</h4>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <div class="contains">
+                        <h4>Curabitur porttitor orci eget neque accumsan venenatis.</h4>
+                        <p>Nulla libero lorem, euismod venenatis nibh sed, sodales dictum ex. Etiam nisi augue,
+                            malesuada et pulvinar at, posuere eu neque.</p>
+                        <a href="#">Read More &nbsp;<span><iconify-icon icon="si:arrow-right-line" width="24"
+                                    height="24"></iconify-icon></span> </a>
+                    </div>
+                </div>
+                <!-- 3 -->
+
+            </div>
+        </div>
+    </section>
+<!-- =====  news section end    ===== -->
+
+ 
+<!-- =====  subscribe section start  ===== -->
+ <section id="subscribe">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-2 col-lg-2 col-md-3 img-box">
+                <img src="{{ asset(path: 'fronted/assets/images/subscribe/Logo.png') }}"  alt="logo"  class="img-fluid">
+            </div>
+             <div class="col-xl-4 col-lg-4 col-md-7 contains">
+                <p>Subscribe Our Newsletter</p>
+                <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 contains_two">
+                <input type="text" placeholder="Your email address">
+                <button type="submit">Subscribe</button>
+            </div>
+
+        </div>
+    </div>
+ </section>
+
+    
+@endsection

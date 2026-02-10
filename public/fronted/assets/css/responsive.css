@@ -1,0 +1,1292 @@
+:root {
+    --gren-gray-scale-900: #002603;
+    --gren-gray-scale-800: #173b1a;
+    --gren-gray-scale-700: #2b572e;
+    --gren-gray-scale-600: #406b42;
+    --gren-gray-scale-500: #618062;
+    --gren-gray-scale-400: #7a997c;
+    --gren-gray-scale-300: #96b297;
+    --gren-gray-scale-200: #b4ccb4;
+    --gren-gray-scale-100: #dae5da;
+    --gren-gray-scale-50: #edf2ee;
+    --gray-scale-gray--900: #1a1a1a;
+    --gray-scale-gray--800: #333;
+    --gray-scale-gray--700: #4d4d4d;
+    --gray-scale-gray--600: #666;
+    --gray-scale-gray--500: #808080;
+    --gray-scale-gray--400: #999;
+    --gray-scale-gray--300: #b3b3b3;
+    --gray-scale-gray--200: #ccc;
+    --gray-scale-gray--100: #e6e6e6;
+    --gray-scale-gray--50: #f2f2f2;
+    --gray-scale-white: #fff;
+    --branding-success-bright: #84d187;
+    --branding-success: #00b207;
+    --branding-success-dark: #2c742f;
+    --branding-warning: #ff8a00;
+    --branding-error: #ea4b48;
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Segoe Script", sans-serif;
+    --third-family: "Dancing Script", sans-serif;
+}
+
+@font-face {
+    font-family: "Segoe Script";
+    src: url(../fonts/segoescript.ttf);
+}
+
+
+@media(min-width:1201px) and (max-width:1400px) {
+
+    /*-------- desc_tab css start ----------*/
+    #desc_tab .img-box .contains {
+        width: 98%;
+
+        margin-top: 20px;
+    }
+
+
+    /*-------- desc_tab css end ----------*/
+
+
+
+
+}
+
+
+@media(min-width:993px) and (max-width:1200px) {
+    #heading .search button {
+        padding: 12px 14px;
+    }
+
+    /*-------- banner css start ----------*/
+    #banner {
+        padding-top: 40px;
+    }
+
+    #banner .contains {
+        text-align: center;
+    }
+
+    #banner .contains h4 {
+        font-size: 40px;
+    }
+
+    #banner .slick-dots {
+        padding-left: 0;
+    }
+
+    #banner .banner-img .offer {
+        top: 20%;
+        right: 100px;
+    }
+
+
+    /*-------- banner css end ----------*/
+
+    /*-------- featured css start ----------*/
+
+    /*-------- featured css end ----------*/
+
+    /*-------- service css start ----------*/
+    #service .services .box {
+        padding: 40px;
+
+        border-bottom: 1px solid var(--gray-scale-gray--100);
+        /* text-align: center; */
+    }
+
+    #service .services .box:nth-of-type(2):hover {
+        border-radius: 0 8px 8px 0;
+
+    }
+
+    #service .services .box:nth-of-type(3):hover {
+        border-radius: 0 0 0 8px;
+
+    }
+
+    #service .services .box:last-of-type:hover {
+        border-radius: 0 0 8px 0;
+
+    }
+
+    /*-------- service css end ----------*/
+
+    /*-------- ad-card css start ----------*/
+    #ad-card .boxes .box-2 .details {
+        padding: 46px 15px 46px 0;
+    }
+
+    #ad-card .boxes .box-2 .details p {
+
+        text-align: center;
+    }
+
+    #ad-card .boxes .box-2 .details h4 {
+
+        font-size: 26px;
+
+        text-align: center;
+    }
+
+    #ad-card .boxes .box-1:last-of-type .details {
+        padding: 46px 0 46px 20px;
+    }
+
+    #ad-card .boxes .box-1:last-of-type h4,
+    #ad-card .boxes .box-1 .details h4 {
+        font-size: 26px;
+    }
+
+    #ad-card .boxes .box-1:first-of-type .details a,
+    #ad-card .boxes .box-1:last-of-type .details a,
+    #ad-card .boxes .box-2 .details a {
+        padding: 14px 20px;
+    }
+
+
+
+
+
+    /*-------- ad-card css end ----------*/
+
+    /*-------- product_desc css start ----------*/
+
+
+    .magnifier {
+
+        left: 30% !important;
+        width: 300px !important;
+        height: 300px !important;
+
+    }
+
+    #product_desc .contains a {
+        padding: 14px 35px;
+    }
+
+    /*-------- product_desc css end ----------*/
+
+
+
+
+    /*-------- subscribe css start ----------*/
+    #subscribe .contains p:first-of-type {
+
+        font-size: 20px;
+
+    }
+
+    #subscribe .contains_two button {
+
+        padding: 16px 30px;
+        font-size: 16px;
+
+    }
+
+    /*-------- subscribe css end ----------*/
+
+    /*-------- desc_tab css start ----------*/
+    #desc_tab .img-box .contains {
+        width: 100%;
+
+        margin-top: 20px;
+    }
+
+    #desc_tab .img-box .contains .box .text p {
+        font-size: 11px;
+    }
+
+    #desc_tab .img-box .contains .box:last-of-type {
+        margin-left: 12px;
+    }
+
+    /*-------- desc_tab css end ----------*/
+
+    /*-------- footer css start ----------*/
+
+    /*-------- footer css end ----------*/
+
+
+
+
+}
+
+
+@media(max-width:992px) {
+
+
+    /* header  .second
+{
+    justify-content: center;
+}
+
+header .contains 
+{
+    justify-content: center;
+} */
+
+    header {
+        display: none;
+    }
+
+    #heading {
+        box-shadow: 3px 5px 10px #ddc5c5;
+    }
+
+    #heading .menu {
+        display: block;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    #heading .menu span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+
+    }
+
+    #heading .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /*-------- offcanvas css start ----------*/
+    .offcanvas {
+        width: 100%;
+        max-width: 350px;
+
+
+    }
+
+    /* .offcanvas-body 
+{
+    background-image: url('../images/vegetables.jpg');
+    background-position: center;
+    background-size: cover;
+   
+} */
+
+
+    .offcanvas-header .logo a {
+        padding-left: 57px;
+    }
+
+
+
+    .offcanvas-body .search input {
+        padding: 12px 18px 12px 44px;
+        border: 1px solid var(--gray-scale-gray--100);
+        border-radius: 6px 0 0 6px;
+        width: 80%;
+
+    }
+
+    .offcanvas-body .search input:focus {
+        outline: none;
+    }
+
+    .offcanvas-body .search input::placeholder {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        color: var(--gray-scale-gray--500);
+
+    }
+
+    .offcanvas-body .search form {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .offcanvas-body .search form span {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #1A1A1A;
+    }
+
+    .offcanvas-body .search button {
+
+        padding: 12px 24px;
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        color: var(--gray-scale-white);
+        padding: 14px 24px;
+        background: var(--branding-success);
+        border-radius: 0 6px 6px 0;
+
+        border: none;
+        display: inline-block;
+        width: 30%;
+    }
+
+    .offcanvas-body .contains {
+        margin-top: 30px;
+    }
+
+
+    .offcanvas-body .contains .wishlist {
+        display: inline-flex;
+        line-height: 0;
+        align-items: center;
+        justify-content: center;
+        padding-right: 16px;
+        border-right: 1px solid var(--gray-scale-gray--200);
+    }
+
+    .offcanvas-body .contains .contains_two {
+        margin-left: 16px;
+    }
+
+    .offcanvas-body .contains .contains_two .details {
+        margin-left: 16px;
+    }
+
+    .offcanvas-body .contains .contains_two .details span {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: var(--gray-scale-gray--900);
+    }
+
+    .offcanvas-body .contains .contains_two .cart .bag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+    }
+
+    .offcanvas-body .contains .contains_two .cart {
+        position: relative;
+    }
+
+    .offcanvas-body .contains .contains_two .cart .two {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 100%;
+        text-align: center;
+        color: var(--gray-scale-white);
+        background: var(--branding-success-dark);
+        border: 1px solid var(--gray-scale-white);
+        border-radius: 16px;
+        padding: 4.5px 6px 4.5px 6px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .offcanvas-body .contains .contains_two .details p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 120%;
+        color: var(--gray-scale-gray--700);
+        margin-bottom: 0;
+    }
+
+    .offcanvas-body .contains_three {
+        margin: 30px 0;
+    }
+
+
+    .offcanvas-body .contains_three .location {
+        color: #333;
+        display: inline-flex;
+        align-items: center;
+        line-height: 0;
+        justify-content: center;
+    }
+
+    .offcanvas-body .contains_three p {
+        margin-bottom: 0;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: #000;
+        margin-left: 8px;
+    }
+
+
+
+
+    .offcanvas-body .second .sign-links {
+        padding-left: 20px;
+
+    }
+
+    .offcanvas-body .second .sign-links a {
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: black;
+    }
+
+    .offcanvas-body .second .sign-links a:hover {
+        color: var(--branding-success);
+    }
+
+    .offcanvas-body .second .sign-links .or {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        color: var(--gray-scale-gray--300);
+    }
+
+    .offcanvas-body .second .lang_money {
+        padding-right: 20px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .offcanvas-body .second .lang select,
+    .offcanvas-body .second .money select {
+        margin-right: 20px;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        text-align: center;
+        color: black;
+    }
+
+    .offcanvas-body .second {
+        justify-content: end;
+        margin-bottom: 20px;
+
+    }
+
+    /* navbar  */
+
+
+
+    .offcanvas .offcanvas-body .dropdown .dropdown-toggle::after {
+        display: none;
+    }
+
+    .offcanvas .offcanvas-body .dropdown .btn span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+    }
+
+    .offcanvas .offcanvas-body .dropdown .btn p {
+
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-scale-white);
+        margin: 0 8px;
+    }
+
+    .offcanvas .offcanvas-body .dropdown .btn {
+        display: flex;
+        align-items: center;
+        background: var(--branding-success);
+        padding: 18px 24px;
+        margin-right: 16px;
+        border-radius: 0;
+        border: none;
+    }
+
+    .offcanvas .offcanvas-body .dropdown .dropdown-menu a {
+        padding: 15px 18px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-scale-gray--500);
+    }
+
+    .offcanvas .offcanvas-body .dropdown .dropdown-menu {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+
+
+
+
+
+
+
+    .offcanvas .offcanvas-body .navbar-nav a.dropdown-toggle::after {
+        display: none;
+    }
+
+    .offcanvas .offcanvas-body .navbar-nav .nav-link span {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+        color: var(--branding-success-bright);
+    }
+
+    /* .offcanvas .offcanvas-body .navbar-nav .nav-link span
+{
+    display: none;
+} */
+    .offcanvas .offcanvas-body .navbar-nav .nav-link p {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--branding-success);
+
+        padding: 17px 0;
+        margin-bottom: 0;
+        margin-right: 4px;
+
+
+    }
+
+    .offcanvas .offcanvas-body .navbar-nav .nav-link {
+        display: flex;
+        padding: 0 14px;
+        margin: 0 16px;
+        align-items: center;
+        outline: 1px solid rgb(76, 209, 55, 0.4);
+        border-radius: 13px;
+        margin-bottom: 10px;
+        justify-content: space-between;
+
+    }
+
+    .offcanvas .offcanvas-body .navbar-nav .nav-link p:hover {
+
+        color: var(--branding-success);
+    }
+
+    .offcanvas .offcanvas-body .navbar-nav .dropdown-menu {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        margin: 0;
+        width: 90%;
+
+    }
+
+    .offcanvas .offcanvas-body .navbar-nav .dropdown-menu a {
+        padding: 15px 19px;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--branding-success);
+    }
+
+
+
+
+    /* navbar  */
+
+    /*-------- offcanvas css end ----------*/
+
+    /*-------- mobile-bottom css start ----------*/
+    #mobile-footer {
+        display: block;
+    }
+
+    /*-------- mobile-bottom css end ----------*/
+
+    /*-------- banner css start ----------*/
+    #banner {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    #banner .banner-img .offer {
+        width: 90px;
+        height: 90px;
+        top: 4%;
+        right: 13px;
+    }
+
+    #banner .contains {
+        text-align: center;
+    }
+
+
+    #banner .contains h4 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    #banner .contains p:last-of-type {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    #banner .next {
+        top: 47%;
+    }
+
+    #banner .prev {
+        top: 47%;
+    }
+
+    #banner .slick-dots {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+
+
+    /*-------- banner css end ----------*/
+
+
+    /*-------- featured css start ----------*/
+    #featured .next {
+        top: -5%;
+        right: 0;
+        width: 18px;
+        height: 18px;
+    }
+
+    #featured .prev {
+        top: -5%;
+        left: 0;
+        width: 18px;
+        height: 18px;
+    }
+
+    #featured .container>h5 {
+
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+    /*-------- featured css end ----------*/
+
+    /*-------- categories css start ----------*/
+    #categories {
+        padding-bottom: 20px;
+    }
+
+    #categories .buttons button {
+        padding: 0 6px 8px 6px;
+        font-size: 14px;
+        margin: 1px;
+
+    }
+
+
+    #categories .buttons button::before {
+
+        top: 1px;
+        right: -4px;
+
+    }
+
+    #categories .filter-box {
+        padding-bottom: 40px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #categories .container>h5 {
+
+        font-size: 32px;
+
+        margin-bottom: 24px;
+    }
+
+    #categories .buttons {
+        padding-bottom: 30px;
+    }
+
+
+    /*-------- categories css end ----------*/
+
+    /*-------- timer css start ----------*/
+    #timer {
+
+        padding: 40px 0;
+        margin-bottom: 40px;
+    }
+
+    #timer .container>h4 {
+        font-size: 32px;
+    }
+
+    #timer .countdown .hq-countdown .hq-countdown-item .hq-number {
+
+        font-size: 26px;
+
+    }
+
+    #timer .countdown .hq-countdown .hq-countdown-item .hq-label {
+
+        font-size: 12px;
+
+    }
+
+    /*-------- timer css end ----------*/
+
+    /*-------- service css start ----------*/
+    #service .services {
+        margin: 0 5px;
+    }
+
+    #service .services .box {
+        padding: 40px;
+
+        border-bottom: 1px solid var(--gray-scale-gray--100);
+        text-align: center;
+    }
+
+    #service .services .box:last-of-type:hover {
+        border-radius: 0 0 8px 8px;
+
+    }
+
+    /*-------- service css end ----------*/
+
+    /*-------- ad-card css start ----------*/
+
+    #ad-card {
+        margin-bottom: 40px;
+    }
+
+
+    #ad-card .boxes .box {
+        width: calc(100% - 24px);
+        margin: 12px;
+
+    }
+
+    /*-------- ad-card css end ----------*/
+
+    /*-------- client css start ----------*/
+    #client {
+        padding-top: 30px;
+    }
+
+
+    #client .container>h4 {
+        font-size: 30px;
+    }
+
+    /*-------- client css end ----------*/
+
+
+    /*-------- video css start ----------*/
+    #video .contains h4 {
+
+        font-size: 28px;
+
+    }
+
+    #video {
+
+
+        margin-top: -438px;
+
+    }
+
+    /*-------- video css end ----------*/
+
+    /*-------- news css start ----------*/
+    #news .row {
+        padding-bottom: 20px;
+    }
+
+
+    #news .container>h4 {
+        font-size: 30px;
+    }
+
+    #news .row {
+        margin: 0 5px;
+    }
+
+    #news .card-box {
+
+        width: calc(100% - 24px);
+
+    }
+
+    /*-------- news css end ----------*/
+
+    /*-------- product_desc css start ----------*/
+    .magnifier {
+
+        left: 50% !important;
+        transform: translateX(-50%);
+        width: 250px !important;
+        height: 250px !important;
+        border: 1px solid var(--branding-success) !important;
+
+    }
+
+    #product_desc .box {
+        margin-top: 20px;
+    }
+
+    #product_desc .header h4 {
+        font-size: 27px;
+        margin-right: 2px;
+    }
+
+    #product_desc .second-header,
+    #product_desc .prices,
+    #product_desc .header {
+        justify-content: center;
+    }
+
+    #product_desc .fifth {
+        text-align: justify;
+    }
+
+    #product_desc .contains,
+    #product_desc .brands {
+        flex-direction: column;
+    }
+
+    #product_desc .brands .icons {
+        margin-top: 10px;
+    }
+
+    #product_desc .contains a {
+        margin: 10px 0;
+    }
+
+    #product_desc {
+        padding-top: 40px;
+    }
+
+    /*-------- product_desc css end ----------*/
+
+    /*-------- subscribe css start ----------*/
+    #subscribe {
+        padding-top: 20px;
+        margin-top: 0;
+        border-top: none;
+        position: static;
+    }
+
+    #subscribe .contains_two {
+        margin-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #subscribe .contains {
+        margin-top: 20px;
+        text-align: center;
+
+    }
+
+    #subscribe .contains_two input {
+        padding: 12px 24px;
+    }
+
+    #subscribe .contains_two input::placeholder {
+        font-size: 14px;
+    }
+
+    #subscribe .contains_two button {
+        padding: 15.4px 25px;
+        font-size: 14px;
+    }
+
+    #subscribe .img-box {
+        text-align: center;
+    }
+
+    #subscribe .row {
+        padding: 20px 0;
+    }
+
+    #subscribe .icons {
+        justify-content: center;
+    }
+
+    /*-------- subscribe css end ----------*/
+
+    /*-------- footer css start ----------*/
+    #footer .about {
+        text-align: center;
+        margin-bottom: 30px;
+
+    }
+
+    #footer .insta {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    #footer .account.one {
+        padding-left: 20px;
+    }
+
+    #footer .row {
+        padding: 40px 0;
+    }
+
+    #footer .footer_two {
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    #footer .footer_two p {
+        margin: 15px 0;
+    }
+
+
+
+
+    #footer .insta,
+    #footer .row .account {
+        z-index: 3;
+    }
+
+    #footer .footer_two p {
+        z-index: 3;
+    }
+
+    #footer .row .account h4 {
+        text-align: center;
+    }
+
+    #footer .row .account.one ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .row .account.one ul li {
+        margin: 0 10px;
+    }
+
+
+    #footer .row .account.two ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .row .account.two ul li {
+        margin: 0 10px;
+    }
+
+    #footer .row .account.three ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .row .account.three ul li {
+        margin: 0 10px;
+    }
+
+    #footer .row .account.four ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer .row .account.four ul li {
+        margin: 0 10px;
+    }
+
+
+
+
+    /*-------- footer css end ----------*/
+
+    /*-------- heading_four css start ----------*/
+    #heading_four p {
+        padding: 25px 0;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 150%;
+        color: var(--gray-scale-gray--400);
+        display: inline-flex;
+    }
+
+    #heading_four p span:first-of-type {
+        padding-bottom: 2px;
+    }
+
+    /*-------- heading_four css end ----------*/
+
+    /*-------- desc_tab css start ----------*/
+
+
+    #desc_tab .vtabs-content .contains p {
+        font-size: 12px;
+    }
+
+    #desc_tab .img-box .contains .box:last-of-type {
+        margin-left: 12px;
+    }
+
+    #desc_tab .vtabs-content .contains ul li {
+        font-size: 12.5px;
+    }
+
+    #desc_tab .img-box .contains {
+        width: 100%;
+        padding: 20px 15px;
+        margin-top: 20px;
+    }
+
+    #desc_tab .vtabs-toggles {
+        margin-bottom: 18px;
+    }
+
+    #product_desc {
+        padding-bottom: 20px;
+    }
+
+    #desc_tab .img-box .contains .box .text p {
+        font-size: 11px;
+    }
+
+    #desc_tab .img-box .contains .box .text h5 {
+        font-size: 12px;
+    }
+
+    #desc_tab .three .link {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #desc_tab .two .contains {
+        margin-bottom: 20px;
+    }
+
+    #desc_tab .two .contains .tname p,
+    #desc_tab .two .contains .tdesc p,
+    #desc_tab .two .contains .tdesc p a {
+        font-size: 12px;
+    }
+
+    /*-------- desc_tab css end ----------*/
+
+    /* -----------------------------------------------  vegetable.html ------------------------------------------------------------------------*/
+    /*-------- featured css start ----------*/
+    #filtered .product_child {
+
+        width: calc(100% - 24px);
+        margin-right: 12px;
+    }
+
+    #filtered .cat-buttons.all ul
+    {
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+
+    #filtered .cat-buttons.all ul li 
+    {
+        margin: 5px 10px;
+    }
+
+    .price-filter-range {
+    width: 70%;
+    height: 6px;
+    
+}
+
+
+
+     #filtered .cat-buttons.prices .accordion-body
+    {
+       padding: 0 10px;
+    }
+    
+     #filtered .cat-buttons.prices 
+     {
+        padding-bottom: 20px;
+     }
+
+     #filtered .sale > h5 
+     {
+        text-align: center;
+     }
+
+    /*-------- featured css end ----------*/
+
+    /* -----------------------------------------------  vegetable.html ------------------------------------------------------------------------*/
+   
+   
+    /* -----------------------------------------------  wishlist.html ------------------------------------------------------------------------*/
+
+    #wishlist table .cart, #wishlist table .cart-out
+{
+    border-radius: 12px;
+padding: 10px;
+background: var(--branding-success);
+text-decoration: none;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 14px;
+line-height: 120%;
+color: var(--gray-scale-white);
+display: inline-flex;
+align-items: center;
+white-space: nowrap;
+margin-right: 10px;
+
+}
+
+
+}
+
+@media(max-width:992px) and (min-width:769px)
+{
+     #filtered .product_child {
+
+        width: calc(50% - 24px);
+        margin-right: 12px;
+    }
+}
+
+@media(max-width:768px) and (min-width:577px) {
+
+    /*-------- desc_tab css start ----------*/
+    #desc_tab .vtabs-toggles .vtab-toggle {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 150%;
+        color: var(--gray-scale-gray--500);
+        padding: 13px;
+        cursor: pointer;
+    }
+
+    #desc_tab .vtabs-toggles .vtab-toggle.active {
+        font-family: var(--font-family);
+        font-weight: 500;
+
+        line-height: 150%;
+        color: var(--gray-scale-gray--900);
+        position: relative;
+    }
+
+    #desc_tab .vtabs-content .contains p {
+
+        /* text-align: justify; */
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--gray-scale-gray--500);
+        margin-bottom: 20px;
+    }
+
+    #desc_tab .vtabs-content .contains ul li {
+        font-size: 14px;
+    }
+
+    /*-------- desc_tab css end ----------*/
+
+    /*------------------------------------------------------- vegetable.html ------------------------------------------------*/
+     #filtered .product_child {
+
+        width: calc(50% - 24px);
+        margin-right: 12px;
+    }
+
+   
+
+
+}
+
+
+
+
+@media(max-width:576px) {
+    #footer .account h4 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    #footer .row .account.one ul li,
+    #footer .row .account.two ul li,
+    #footer .row .account.three ul li {
+        margin-right: 5px;
+        margin-left: 0;
+    }
+
+    #footer .account ul li a {
+        font-size: 11.5px;
+    }
+
+    /* #footer .row .account.one ul
+{
+    justify-content: left;
+} */
+
+    #footer .about p:first-of-type {
+        font-size: 14px;
+    }
+
+    #footer .row .account.four ul {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+
+
+    /*-------- desc_tab css start ----------*/
+
+    #desc_tab .vtabs-toggles {
+        justify-content: space-between;
+    }
+
+    #desc_tab .vtabs-toggles .vtab-toggle {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: var(--gray-scale-gray--500);
+        /* padding: 9px; */
+        padding: 0;
+        padding-bottom: 10px;
+
+
+    }
+
+    #desc_tab .vtabs-toggles .vtab-toggle.active {
+        font-family: var(--font-family);
+        font-weight: 500;
+
+        line-height: 150%;
+        color: var(--gray-scale-gray--900);
+
+
+    }
+
+    /*-------- desc_tab css end ----------*/
+
+
+}

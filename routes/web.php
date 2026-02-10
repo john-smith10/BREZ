@@ -1,67 +1,6 @@
 <?php
 
-// use App\Http\Controllers\admin\AdminController;
-// use App\Http\Controllers\Backend\Orm\OrmController;
-// use App\Http\Controllers\Backend\Profile\ProfileController;
-// use App\Http\Controllers\Backend\Category\CategoryController;
 
-// use App\Http\Controllers\ProfileController;
-// use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\admin\AdminController;
-// use App\Http\Controllers\Backend\Orm\OrmController;
-// use App\Http\Controllers\Backend\Profile\ProfileController;
-// use App\Http\Controllers\Backend\Category\CategoryController;
-// use Illuminate\Support\Facades\Route;
-
-
-// Route::get('/', function () {
-//     return view('welcome');
-// })->middleware('admin')->name('home');
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified','admin'])->name('dashboard');
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    
-
-// });
-
-
-// Route::prefix('admin/')->name('admin.')->group(function(){
-//      Route::get('home', [AdminController::class, 'index'])->name('home');
-//     Route::get('about', [AdminController::class, 'about'])->name('about');
-//     Route::get('contact', [AdminController::class, 'contact'])->name('contact');
-
-// });
-
-// Route::get('/orm', [OrmController::class, 'index']);    
-//  Route::get('/orm', [UserController::class, 'index']);  
-
-
-
-
-
-// Route::middleware(['auth'])->name('dashboard.')->prefix('dashboard')->group(function () {
-//     // ** Profile
-//     Route::get('/profile-update', [ProfileController::class, 'index'])
-//         ->name('profile.index');
-//     Route::post('/profile-update', [ProfileController::class, 'store'])
-//         ->name('profile.store');  
-//     Route::post('/password-update', [ProfileController::class, 'password'])
-//         ->name('password.update'); 
-//     Route::post('/image-update', [ProfileController::class, 'imageUpdate'])
-//         ->name('image.update');  
-    
-//     // ** CATEGORY
-//     Route::get('/category-index', [CategoryController::class, 'index'])
-//         ->name('category-index');
-//     Route::post('/category-index', [CategoryController::class, 'store'])
-//         ->name('category-store');
-// });
 
 
 
@@ -69,7 +8,7 @@
 
 
 // require __DIR__.'/auth.php';
-  
+
 
 
 
@@ -80,6 +19,9 @@ use App\Http\Controllers\Backend\Category\CategoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\Product\ProductController;
 use App\Http\Controllers\Backend\Product\ProductImageController;
+use App\Http\Controllers\Frontend\FrontendController;
+use App\Http\Controllers\SslCommerzPaymentController;
+
 Route::get('/', function () {
     return view('welcome');
 })->middleware('admin')->name('home');
@@ -166,12 +108,51 @@ Route::middleware(['auth'])->name('dashboard.')->prefix('dashboard')->group(func
       Route::get('/product-image-edit/{id}', [ProductController::class, 'productImageEdit'])->name('product.image.edit');
 
     Route::get('/product-image-delete/{id}', [ProductController::class, 'productImageDelete'])->name('product.image.delete');
+   
+     
+     Route::put('/product-image-update/{id}', [ProductController::class, 'productImageUpdate'])->name('product.image.update');
     
     
 
 
           
 });
+
+//   ADD TO CART 
+
+Route::get('/add-to-cart/{id}', [ProductController::class, 'addToCart'])->name('addto.cart');
+Route::get('/cart-delete/{id}', [ProductController::class, 'cartDelete'])->name('delete.cart');
+Route::get('/checkout-form', [ProductController::class, 'checkoutForm'])->name('checkout.form');
+// Route::post('/checkout-order', [ProductController::class, 'order'])->name('checkout.order');
+
+Route::post('/checkout-order', [ProductController::class, 'order'])->name('checkout.order');
+
+
+
+//   FRONTED
+
+ Route::name('frontend.')->group(function(){
+     Route::get('/' , [FrontendController::class, 'index'])->name('index');
+
+
+ });
+  
+
+
+ 
+// SSLCOMMERZ Start
+Route::get('/example1', [SslCommerzPaymentController::class, 'exampleEasyCheckout']);
+Route::get('/example2', [SslCommerzPaymentController::class, 'exampleHostedCheckout']);
+
+Route::post('/pay', [SslCommerzPaymentController::class, 'index']);
+Route::post('/pay-via-ajax', [SslCommerzPaymentController::class, 'payViaAjax']);
+
+Route::post('/success', [SslCommerzPaymentController::class, 'success']);
+Route::post('/fail', [SslCommerzPaymentController::class, 'fail']);
+Route::post('/cancel', [SslCommerzPaymentController::class, 'cancel']);
+
+Route::post('/ipn', [SslCommerzPaymentController::class, 'ipn']);
+//SSLCOMMERZ END
 
 require __DIR__.'/auth.php';
 

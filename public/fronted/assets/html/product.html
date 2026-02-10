@@ -1,0 +1,1432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobazar | Product View</title>
+    <link rel="shortcut icon" href="../../assets/images/fav.png" type="image/x-icon">
+
+    <!-- =====  fonts  ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- =====  slick slider css  ===== -->
+    <link rel="stylesheet" href="../../assets/css/slick.min.css">
+    <!-- =====  aos css  ===== -->
+    <link rel="stylesheet" href="../../assets/css/aos.css">
+    <!-- =====  bootstrap cdn  ===== -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <!-- =====  custom css  ===== -->
+    <!-- <link rel="stylesheet" href="../../assets/css/style.css"> -->
+    <link rel="stylesheet" href="../../assets/css/products.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+
+
+</head>
+
+<body>
+
+
+
+    <!-- =====  header 1 start  ===== -->
+
+
+    <header>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="d-flex contains align-items-center">
+                        <span class="location"><iconify-icon icon="mynaui:location" width="20"
+                                height="20"></iconify-icon></span>
+                        <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 ">
+                    <div class="d-flex second align-items-center ">
+                        <div class="d-flex lang_money">
+                            <div class="lang">
+                                <select name="" id="">
+                                    <option value="">ENG</option>
+                                    <option value="">BN</option>
+                                </select>
+
+                            </div>
+                            <div class="money">
+                                <select name="" id="">
+                                    <option value="">USD</option>
+                                    <option value="">BDT</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sign-links">
+                            <a href="#">Sign In</a>
+                            <span class="or">/</span>
+                            <a href="#">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =====  header 1 end    ===== -->
+
+    <!-- =====  heading section start  ===== -->
+    <section id="heading">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-3 col-lg-3">
+                    <a href="../../index.html"><img src="../../assets/images/logo.png" alt="logo" class="img-fluid"></a>
+                </div>
+                <div class="d-none d-xl-block d-lg-block col-xl-5 col-lg-5 search">
+                    <form action="#">
+                        <input type="text" placeholder="Search">
+
+                        <span><iconify-icon icon="iconoir:search" width="24" height="24"></iconify-icon></span>
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="d-none d-xl-block d-lg-block col-xl-3 col-lg-3">
+                    <div class="d-flex contains align-items-center justify-content-end" data-aos="zoom-out-left">
+                        <span class="wishlist"><iconify-icon icon="gridicons:heart-outline" width="32"
+                                height="32"></iconify-icon></span>
+                        <div class="d-flex contains_two  align-items-center">
+                            <div class="cart">
+                                <span class="bag"><iconify-icon icon="heroicons:shopping-bag" width="34"
+                                        height="34"></iconify-icon></span>
+                                <span class="two">2</span>
+                            </div>
+                            <div class="details">
+                                <p>Shopping Cart</p>
+                                <span>$57.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <button class="menu">
+                <span data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><iconify-icon icon="ic:round-menu" width="24"
+                        height="24"></iconify-icon></span>
+            </button>
+
+        </div>
+    </section>
+    <!-- =====  heading section end    ===== -->
+
+    <!-- =====  offcanvas section start  ===== -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="logo">
+                <a href="./index.html"><img src="../../assets/images/logo.png" alt="logo" class="img-fluid"></a>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="d-flex second align-items-center justify-content-center">
+                <div class="d-flex lang_money">
+                    <div class="lang">
+                        <select name="" id="">
+                            <option value="">ENG</option>
+                            <option value="">BN</option>
+                        </select>
+
+                    </div>
+                    <div class="money">
+                        <select name="" id="">
+                            <option value="">USD</option>
+                            <option value="">BDT</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sign-links">
+                    <a href="#">Sign In</a>
+                    <span class="or">/</span>
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+
+            <!-- navbar ul  -->
+            <!-- dropdown button -->
+            <!-- <div class="dropdown ps-5 pb-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>
+                    <p>All Categories</p>
+                    <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div> -->
+            <!-- dropdown button -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                <!-- 1 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Home</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 1 -->
+
+                <!-- 2 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Shop</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 2 -->
+
+
+                <!-- 3 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Pages</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 3 -->
+
+                <!-- 4 -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <p>Blog</p>
+                        <span><iconify-icon icon="basil:plus-outline" width="24" height="24"></iconify-icon></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <!-- 4 -->
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <p>About Us</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <p>Contact Us</p>
+                    </a>
+                </li>
+
+
+            </ul>
+
+
+
+
+
+
+            <!-- location -->
+            <!-- <div class="d-flex contains_three align-items-center">
+                <span class="location"><iconify-icon icon="mynaui:location" width="20"
+                        height="20"></iconify-icon></span>
+                <p>Store Location: Lincoln- 344, Illinois, Chicago, USA</p>
+            </div> -->
+
+
+
+
+
+            <!-- <div class="search">
+                <form action="#">
+                    <input type="text" placeholder="Search">
+
+                    <span><iconify-icon icon="iconoir:search" width="24" height="24"></iconify-icon></span>
+                    <button type="submit">Search</button>
+                </form>
+            </div> -->
+
+            <div class="d-flex contains align-items-center justify-content-center">
+                <span class="wishlist"><iconify-icon icon="gridicons:heart-outline" width="32"
+                        height="32"></iconify-icon></span>
+                <div class="d-flex contains_two  align-items-center">
+                    <div class="cart">
+                        <span class="bag"><iconify-icon icon="heroicons:shopping-bag" width="34"
+                                height="34"></iconify-icon></span>
+                        <span class="two">2</span>
+                    </div>
+                    <div class="details">
+                        <p>Shopping Cart</p>
+                        <span>$57.00</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- =====  offcanvas section end    ===== -->
+
+
+    <!-- =====  nav section start  ===== -->
+
+
+    <section id="nav">
+        <nav class="navbar navbar-expand-lg d-none d-xl-block">
+            <div class="container">
+                <!-- =====  dropdown button  ===== -->
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <span><iconify-icon icon="ic:round-menu" width="24" height="24"></iconify-icon></span>
+                        <p>All Categories</p>
+                        <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div> -->
+                <!-- =====  dropdown button  ===== -->
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li> -->
+                        <!-- 1 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home&nbsp;
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./vegetables.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 1 -->
+
+                        <!-- 2 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Shop&nbsp;
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 2 -->
+
+
+                        <!-- 3 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages&nbsp;
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 3 -->
+
+                        <!-- 4 -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Blog&nbsp;
+                                <span><iconify-icon icon="ep:arrow-down" width="24" height="24"></iconify-icon></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <!-- 4 -->
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="d-flex call align-items-center">
+                        <span><iconify-icon icon="mingcute:phone-call-line" width="24"
+                                height="24"></iconify-icon></span>
+                        <a href="tel:+(219) 555-0114">(219) 555-0114</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- =====  nav section end    ===== -->
+
+    <section id="heading_four">
+        <div class="container">
+            <p class="mb-0"><span><iconify-icon icon="material-symbols-light:home-outline" width="24"
+                        height="24"></iconify-icon></span> &nbsp;> &nbsp;Category &nbsp;> &nbsp;Vegetables &nbsp;>
+                &nbsp;<span class="cabbage">Chinese Cabbage</span></p>
+        </div>
+    </section>
+
+
+    <!-- =====  mobile-footer section start  ===== -->
+
+    <section id="mobile-footer" class="d-xl-none d-lg-none d-md-none">
+
+
+
+        <div class="d-flex justify-content-center align-items-center justify-content-between">
+            <div class=" box">
+                <a href="./index.html"><span><iconify-icon icon="ic:sharp-home" width="26"
+                            height="26"></iconify-icon></span></a>
+                <p class="mb-0">Home</p>
+            </div>
+            <div class="box cart">
+                <span><iconify-icon icon="heroicons:shopping-bag" width="26" height="26"></iconify-icon></span>
+                <span class="txt">2</span>
+                <p class="mb-0">Cart</p>
+            </div>
+            <div class="box">
+                <span class="search_icon"><iconify-icon icon="tdesign:search" width="26"
+                        height="26"></iconify-icon></span>
+                <p class="mb-0">Search</p>
+            </div>
+            <div class="box ">
+                <span><iconify-icon icon="bxs:offer" width="26" height="26"></iconify-icon></iconify-icon></span>
+                <p class="mb-0">Offers</p>
+            </div>
+            <div class=" box">
+                <span><iconify-icon icon="tdesign:user-filled" width="26" height="26"></iconify-icon></span>
+                <p class="mb-0">Account</p>
+            </div>
+
+
+        </div>
+
+
+    </section>
+    <!-- =====  mobile-footer section end    ===== -->
+
+    <!-- =====  search section start  ===== -->
+    <div id="search-box">
+        <div class="container">
+            <span class="cross"><iconify-icon icon="codex:cross" width="24" height="24"></iconify-icon></span>
+            <form action="#">
+                <input type="text" placeholder="e.g. Brinjal, tomato, etc.">
+                <button type="submit" class="searchbtn">
+                    <span><iconify-icon icon="tdesign:search" width="24" height="24"></iconify-icon></span>
+                </button>
+            </form>
+
+        </div>
+    </div>
+    <!-- =====  search section end    ===== -->
+
+
+
+
+    <!-- product_desc section start -->
+
+    <section id="product_desc">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 order-1 order-lg-0 slider-nav">
+
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image.png" alt="Product" class="img-fluid">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image2.png" alt="Product" class="img-fluid">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image3.png" alt="Product" class="img-fluid">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image4.png" alt="Product" class="img-fluid">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image.png" alt="Product" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 order-0 order-lg-1 slider-for">
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image.png" alt="Product"
+                                    class="img-fluid example">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image2.png" alt="Product"
+                                    class="img-fluid example">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image3.png" alt="Product"
+                                    class="img-fluid example">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image4.png" alt="Product"
+                                    class="img-fluid example">
+                            </div>
+                            <div class="product-child">
+                                <img src="../images/product_desc/Product Image.png" alt="Product"
+                                    class="img-fluid example">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 box">
+                    <div class="header d-flex align-items-center">
+                        <h4>Chinese Cabbage</h4>
+                        <p>In Stock</p>
+                    </div>
+                    <div class="second-header d-flex align-items-center">
+                        <div>
+                            <span><iconify-icon icon="famicons:star" width="15" height="15"></iconify-icon></span>
+                            <span><iconify-icon icon="famicons:star" width="15" height="15"></iconify-icon></span>
+                            <span><iconify-icon icon="famicons:star" width="15" height="15"></iconify-icon></span>
+                            <span><iconify-icon icon="famicons:star" width="15" height="15"></iconify-icon></span>
+                            <span><iconify-icon icon="famicons:star" width="15" height="15"></iconify-icon></span>
+                        </div>
+                        <p>&nbsp;4 Review &nbsp;&nbsp;<span>• &nbsp;&nbsp;SKU:</span> 2,51,594</p>
+                    </div>
+
+                    <div class="prices d-flex align-items-center">
+                        <p class="mb-0 price1">$48.00</p>&nbsp;
+                        <p class="mb-0 price_d">$17.28</p>
+                        <span>64% Off</span>
+                    </div>
+
+                    <div class="brands d-flex align-items-center justify-content-between">
+                        <div class="d-flex align-items-center">
+                            <p class="mb-0">Brand: </p>
+                            <img src="../images/product_desc/farmary.png" alt="farmary" class="img-fluid">
+                        </div>
+                        <div class="icons d-flex align-items-center">
+                            <p class="mb-0">Share Item: </p>
+                            <span><iconify-icon icon="ri:facebook-fill" width="24" height="24"></iconify-icon></span>
+                            <span><iconify-icon icon="uil:twitter" width="24" height="24"></iconify-icon></span>
+                            <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+                            <span><iconify-icon icon="basil:instagram-outline" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+
+                    </div>
+
+                    <p class="fifth">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Nulla nibh diam, blandit vel consequat nec, ultrices et ipsum. Nulla varius magna a consequat
+                        pulvinar.
+                    </p>
+
+                    <div class="d-flex contains align-items-center justify-content-between">
+                        <div class="d-flex icons align-items-center justify-content-between">
+                            <span class="dec"><iconify-icon icon="uil:minus" width="24"
+                                    height="24"></iconify-icon></span>
+                            <input type="text" class="text" value="1" disabled>
+                            <span class="inc"><iconify-icon icon="iconoir:plus" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                        <a href="#">Add to Cart <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span></a>
+                        <span class="heart"><iconify-icon icon="qlementine-icons:heart-24" width="24"
+                                height="24"></iconify-icon></span>
+                    </div>
+
+                    <p class="category">Category: <a href="#">Vegetables</a></p>
+
+                    <p class="tag">Tag:
+                        <a href="#">Vegetables</a>
+                        <a href="#">Healthy</a>
+                        <a href="#">Chinese</a>
+                        <a href="#">Cabbage</a>
+                        <a href="#">Green Cabbage</a>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product_desc section end -->
+
+    <!-- =====  desc_tab section start  ===== -->
+
+    <section id="desc_tab">
+        <div class="container">
+
+            <div class="example">
+                <div class="vtabs-toggles">
+                    <div class="vtab-toggle" data-target="#tab1">Descriptions</div>
+                    <div class="vtab-toggle" data-target="#tab2">Additional Information</div>
+                    <div class="vtab-toggle" data-target="#tab3">Customer Feedback</div>
+                </div>
+                <div class="vtabs-content">
+
+                    <div class="vtab-content" id="tab1">
+                        <div class="row justify-content-between ">
+                            <div class="col-xl-6 col-lg-6 contains">
+                                <p>Sed commodo aliquam dui ac porta. Fusce ipsum felis, imperdiet at posuere ac, viverra
+                                    at mauris. Maecenas tincidunt ligula a sem vestibulum pharetra. Maecenas auctor
+                                    tortor lacus, nec laoreet nisi porttitor vel. Etiam tincidunt metus vel dui interdum
+                                    sollicitudin. Mauris sem ante, vestibulum nec orci vitae, aliquam mollis lacus. Sed
+                                    et condimentum arcu, id molestie tellus. Nulla facilisi. Nam scelerisque vitae justo
+                                    a convallis. Morbi urna ipsum, placerat quis commodo quis, egestas elementum leo.
+                                    Donec convallis mollis enim. Aliquam id mi quam. Phasellus nec fringilla elit.
+                                    <br> <br>
+                                    Nulla mauris tellus, feugiat quis pharetra sed, gravida ac dui. Sed iaculis, metus
+                                    faucibus elementum tincidunt, turpis mi viverra velit, pellentesque tristique neque
+                                    mi eget nulla. Proin luctus elementum neque et pharetra.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <span><iconify-icon icon="teenyicons:tick-circle-solid" width="24"
+                                                height="24"></iconify-icon></span>
+                                        100 g of fresh leaves provides.
+                                    </li> <br>
+                                    <li>
+                                        <span><iconify-icon icon="teenyicons:tick-circle-solid" width="24"
+                                                height="24"></iconify-icon></span>
+                                        Aliquam ac est at augue volutpat elementum.
+                                    </li> <br>
+                                    <li>
+                                        <span><iconify-icon icon="teenyicons:tick-circle-solid" width="24"
+                                                height="24"></iconify-icon></span>
+                                        Quisque nec enim eget sapien molestie.
+                                    </li> <br>
+                                    <li>
+                                        <span><iconify-icon icon="teenyicons:tick-circle-solid" width="24"
+                                                height="24"></iconify-icon></span>
+                                        Proin convallis odio volutpat finibus posuere.
+                                    </li>
+                                </ul>
+                                <p>Cras et diam maximus, accumsan sapien et, sollicitudin velit. Nulla blandit eros non
+                                    turpis lobortis iaculis at ut massa</p>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 img-box">
+                                <img src="../images/product_page/description/Video.png" alt="video" class="img-fluid">
+                                <div class="contains d-flex align-items-center justify-content-between">
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="hugeicons:discount-tag-01" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>64% Discount</h5>
+                                            <p>Save your 64% money with us</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="mdi:leaf" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>100% Organic</h5>
+                                            <p>100% Organic Vegetables</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="vtab-content" id="tab2">
+
+                        <div class="row justify-content-between  two">
+                            <div class="col-xl-6 col-lg-6 contains">
+
+                                <!-- <p>Weight: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>03</span></p>
+                                              
+                                    <p>Color: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Green</span></p>
+                                              
+                                    <p>Type: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Organic</span></p>
+                                              
+                                    <p>Category: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Vegetables</span></p>
+                                              
+                                    <p>Stock Status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Available</span> <span class="num">(5,413)</span></p>
+                                
+                                    <p>Tags: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="#">Vegetables</a>, <a href="#">Healthy</a>, <a href="#">Chinese</a>, <a href="#">Cabbage</a>, <a href="#">Green Cabbage</a>
+                                    </p> -->
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p>Weight:</p>
+                                    </div>
+                                    <div class="col-6 tdesc">
+                                        <p>03</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p class="mb-0">Color:</p>
+                                    </div>
+                                    <div class="col-6 tdesc">
+                                        <p class="mb-0">Green</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p class="mb-0">Type:</p>
+                                    </div>
+                                    <div class="col-6 tdesc">
+                                        <p class="mb-0">Organic</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p class="mb-0">Category:</p>
+                                    </div>
+                                    <div class="col-6 tdesc">
+                                        <p class="mb-0">Vegetables</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p class="mb-0">Stock Status:</p>
+                                    </div>
+                                    <div class="col-5 tdesc">
+                                        <p class="mb-0">Available <span class="num">(5,413)</span></p>
+                                    </div>
+
+                                </div>
+
+                                <div class="row align-items-center details">
+
+
+                                    <div class="col-4 tname">
+                                        <p class="mb-0">Tags:</p>
+                                    </div>
+                                    <div class="col-8 tdesc">
+                                        <p class="mb-0">
+                                            <a href="#">Vegetables</a>, <a href="#">Healthy</a>, <a
+                                                href="#">Chinese</a>, <a href="#">Cabbage</a>, <a href="#">Green
+                                                Cabbage</a>
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="col-xl-6 col-lg-6 img-box">
+                                <img src="../images/product_page/description/Video.png" alt="video" class="img-fluid">
+                                <div class="contains d-flex align-items-center justify-content-between">
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="hugeicons:discount-tag-01" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>64% Discount</h5>
+                                            <p>Save your 64% money with us</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="mdi:leaf" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>100% Organic</h5>
+                                            <p>100% Organic Vegetables</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="vtab-content" id="tab3">
+                        <div class="row justify-content-between three">
+                            <div class="col-xl-6 col-lg-6 contains">
+
+                                <!-- 1 -->
+                                <div class="feed">
+                                    <div class="comments d-flex align-items-center justify-content-between">
+                                        <div class="details d-flex align-items-center">
+                                            <div class="img-box">
+                                                <img src="../images/product_page/feedback/image1.png" alt="image1"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="text">
+                                                <h5>Kristin Watson</h5>
+                                                <div class="icons">
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">2 min ago</p>
+                                    </div>
+                                    <p>Duis at ullamcorper nulla, eu dictum eros.</p>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="feed">
+                                    <div class="comments d-flex align-items-center justify-content-between">
+                                        <div class="details d-flex align-items-center">
+                                            <div class="img-box">
+                                                <img src="../images/product_page/feedback/image2.png" alt="image1"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="text">
+                                                <h5>Jane Cooper</h5>
+                                                <div class="icons">
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span class="ash"><iconify-icon icon="line-md:star-filled"
+                                                            width="16" height="16"></iconify-icon></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">30 April, 2021</p>
+                                    </div>
+                                    <p>Keep the soil evenly moist for the healthiest growth. If the sun gets too hot,
+                                        Chinese cabbage tends to "bolt" or go to seed; in long periods of heat, some
+                                        kind of shade may be helpful. Watch out for snails, as they will harm the
+                                        plants.</p>
+                                </div>
+
+                                <!-- 3 -->
+                                <div class="feed">
+                                    <div class="comments d-flex align-items-center justify-content-between">
+                                        <div class="details d-flex align-items-center">
+                                            <div class="img-box">
+                                                <img src="../images/product_page/feedback/image3.png" alt="image3"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="text">
+                                                <h5>Jacob Jones</h5>
+                                                <div class="icons">
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">2 min ago</p>
+                                    </div>
+                                    <p> Vivamus eget euismod magna. Nam sed lacinia nibh, et lacinia lacus.</p>
+                                </div>
+
+
+                                <!-- 4 -->
+                                <div class="feed">
+                                    <div class="comments d-flex align-items-center justify-content-between">
+                                        <div class="details d-flex align-items-center">
+                                            <div class="img-box">
+                                                <img src="../images/product_page/feedback/image4.png" alt="image1"
+                                                    class="img-fluid">
+                                            </div>
+                                            <div class="text">
+                                                <h5>Ralph Edwards</h5>
+                                                <div class="icons">
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                    <span><iconify-icon icon="line-md:star-filled" width="16"
+                                                            height="16"></iconify-icon></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">2 min ago</p>
+                                    </div>
+                                    <p>200+ Canton Pak Choi Bok Choy Chinese Cabbage Seeds Heirloom Non-GMO Productive
+                                        Brassica rapa VAR. chinensis, a.k.a. Canton's Choice, Bok Choi, from USA
+                                    </p>
+                                </div>
+
+                                <div class="link">
+                                    <a href="#">Load More</a>
+                                </div>
+
+
+
+                            </div>
+                            <div class="col-xl-6 col-lg-6 img-box">
+                                <img src="../images/product_page/description/Video.png" alt="video" class="img-fluid">
+                                <div class="contains d-flex align-items-center justify-content-between">
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="hugeicons:discount-tag-01" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>64% Discount</h5>
+                                            <p>Save your 64% money with us</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="box d-flex align-items-center">
+                                        <span><iconify-icon icon="mdi:leaf" width="24"
+                                                height="24"></iconify-icon></span>
+                                        <div class="text">
+                                            <h5>100% Organic</h5>
+                                            <p>100% Organic Vegetables</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <!-- =====  desc_tab section end    ===== -->
+
+    <!-- =====  featured section start  ===== -->
+    <section id="featured">
+        <div class="container">
+            <h5>Featured Products</h5>
+            <div class="products_parent">
+                <!-- 1 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <img src="../images/Products/Product1.png" alt="product1" class="img-fluid">
+                        <p>Sale <span>50%</span></p>
+                        <div class="preview_icons d-flex">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Apple</h4>
+                            <b>$14.99</b>
+                            <del>$20.99</del>
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------------       -->
+                <!-- 2 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <img src="../images/Products/Product2.png" alt="product1" class="img-fluid">
+
+                        <div class="preview_icons ">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Fresh Indian Malta</h4>
+                            <b>$20.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- --------------------------------------------------------------------------------------------       -->
+                <!-- 3 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <a href="./assets/html/product.html"> <img src="../images/Products/Product3.png" alt="product3"
+                                class="img-fluid"></a>
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <a href="./assets/html/product.html" style="text-decoration: none;">
+                                <h4>Chinese Cabbage</h4>
+                            </a>
+                            <b>$12.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- --------------------------------------------------------------------------------------------       -->
+                <!-- 4 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <img src="../images/Products/Product4.png" alt="product1" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Green Lettuce</h4>
+                            <b>$9.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------------------------------------------------------------------------------------------       -->
+                <!-- 5 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <img src="../images/Products/Eggplant.png" alt="product4" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Eggplant</h4>
+                            <b>$34.00</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- --------------------------------------------------------------------------------------------       -->
+                <!-- 6 -->
+                <div class="product_child">
+                    <div class="img-box">
+                        <img src="../images/Products/cauliflower.png" alt="product4" class="img-fluid">
+
+                        <div class="preview_icons">
+                            <ul>
+                                <li>
+                                    <a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="Add to Wishlist"
+                                        href="#"><span><iconify-icon icon="ion:heart-outline" width="24"
+                                                height="24"></iconify-icon></span></a>
+
+                                </li>
+                                <li><a data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip"
+                                        data-bs-placement="left" data-bs-title="See More" href="#"><span><iconify-icon
+                                                icon="solar:eye-linear" width="24"
+                                                height="24"></iconify-icon></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex box align-items-center justify-content-between">
+                        <div class="contains">
+                            <h4>Fresh Cauliflower</h4>
+                            <b>$14.99</b>
+
+
+                            <div class="icons">
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9733;</span>
+                                <span>&#9734;</span>
+                            </div>
+                        </div>
+                        <div class="cart">
+                            <span><iconify-icon icon="heroicons:shopping-bag" width="24"
+                                    height="24"></iconify-icon></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =====  featured section end    ===== -->
+
+    <!-- =====  subscribe section start  ===== -->
+    <section id="subscribe">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <!-- <div class="col-xl-2 col-lg-2 col-md-3 img-box">
+                <img src="./assets/images/subscribe/Logo.png" alt="logo" class="img-fluid">
+            </div> -->
+                <div class="col-xl-4 col-lg-4  contains">
+                    <p>Subscribe Our Newsletter</p>
+                    <p>Pellentesque eu nibh eget mauris congue mattis matti.</p>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-12 contains_two">
+                    <input type="text" placeholder="Your email address" class="text">
+                    <button type="submit">Subscribe</button>
+                </div>
+
+                <div class="col-xl-2 icons d-flex">
+                    <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="si:twitter-fill" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="basil:instagram-outline" width="24" height="24"></iconify-icon></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =====  subscribe section end    ===== -->
+
+
+    <!-- =====  footer section start  ===== -->
+    <section id="footer">
+        <div class="container">
+            <img src="../../assets/images/footer/Left.png" alt="left" class="img-fluid left">
+            <img src="../../assets/images/footer/right.png" alt="right" class="img-fluid right">
+
+            <div class="row justify-content-between">
+                <div class="about col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                    <h4>About Shoppery</h4>
+                    <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna
+                        congue nec.</p>
+                    <p> <a href="tel:(219) 555-0114">(219) 555-0114</a> &nbsp;or &nbsp;<a href="mailto:Proxy@gmail.com">Proxy@gmail.com</a> </p>
+                </div>
+
+                <div class="account one col-xl-2 col-lg-2   ">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+
+                
+
+                <div class="account two col-xl-2 col-lg-2  ">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms and Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+
+                    </ul>
+                </div>
+
+
+               
+
+                <div class="account three col-xl-2 col-lg-2    ">
+                    <h4>Proxy</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Product Details</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+
+
+                 <div class="account four col-xl-2 col-lg-2  ">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Fruit & Vegetables</a></li>
+                        <li><a href="#">Meat & Fish</a></li>
+                        <li><a href="#">Bread & Bakery</a></li>
+                        <li><a href="#">Beauty & Health</a></li>
+                        <!-- <li><a href="#">Track Order</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- <div class="insta col-xl-3 col-lg-3">
+                    <h4>Instagram</h4>
+                    <div class="img-box">
+                        <img src="../../assets/images/footer/1.png" alt="image1">
+                        <img src="../../assets/images/footer/2.png" alt="image2">
+                        <img src="../../assets/images/footer/3.png" alt="image3">
+                        <img src="../../assets/images/footer/4.png" alt="image4">
+                        <img src="../../assets/images/footer/5.png" alt="image5">
+                        <img src="../../assets/images/footer/6.png" alt="image6">
+                        <img src="../../assets/images/footer/7.png" alt="image7">
+                        <img src="../../assets/images/footer/8.png" alt="image8">
+                    </div>
+                </div> -->
+
+
+
+
+            </div>
+
+            <div class="footer_two d-flex justify-content-between align-items-center">
+                <div class="icons">
+                    <span><iconify-icon icon="gg:facebook" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="si:twitter-fill" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="jam:pinterest" width="24" height="24"></iconify-icon></span>
+                    <span><iconify-icon icon="basil:instagram-outline" width="24" height="24"></iconify-icon></span>
+                </div>
+
+                <p>Shopery eCommerce © 2021. All Rights Reserved</p>
+
+                <div class="img-box">
+                    <img src="../../assets/images/product_page/footer/image1.png" alt="apple">
+                    <img src="../../assets/images/product_page/footer/image2.png" alt="visa">
+                    <img src="../../assets/images/product_page/footer/image3.png" alt="discover">
+                    <img src="../../assets/images/product_page/footer/image4.png" alt="mastercard">
+                    <img src="../../assets/images/product_page/footer/image5.png" alt="securepayment">
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =====  footer section end    ===== -->
+
+
+    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/category-filter.js"></script>
+    <script src="../../assets/js/zoomsl.min.js"></script>
+    <script src="../js/vtabs.js"></script>
+    <script src="../../assets/js/hq-countdown-timer.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <script src="../../assets/js/slick.min.js"></script>
+
+    <script src="../../assets/js/aos.js"></script>
+    <script src="../../assets/js/script.js"></script>
+</body>
+
+</html>
+
+<!-- 20:44 -->
